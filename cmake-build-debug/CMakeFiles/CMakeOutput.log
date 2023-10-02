@@ -369,3 +369,51 @@ Parsed CXX implicit link information from above output:
   implicit fwks: []
 
 
+Determining if the function XOpenDisplay exists in the /usr/lib/libX11.so;/usr/lib/libXext.so passed with the following output:
+Change Dir: /home/piotr/CLionProjects/licencjat/mmo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-wkZohe
+
+Run Build Command(s):/home/piotr/.local/share/JetBrains/Toolbox/apps/clion/bin/ninja/linux/x64/ninja cmTC_b9fd1 && [1/2] Building C object CMakeFiles/cmTC_b9fd1.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_b9fd1
+
+
+
+Determining if the function gethostbyname exists passed with the following output:
+Change Dir: /home/piotr/CLionProjects/licencjat/mmo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-gMWtl3
+
+Run Build Command(s):/home/piotr/.local/share/JetBrains/Toolbox/apps/clion/bin/ninja/linux/x64/ninja cmTC_83c13 && [1/2] Building C object CMakeFiles/cmTC_83c13.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_83c13
+
+
+
+Determining if the function connect exists passed with the following output:
+Change Dir: /home/piotr/CLionProjects/licencjat/mmo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-GpiwcV
+
+Run Build Command(s):/home/piotr/.local/share/JetBrains/Toolbox/apps/clion/bin/ninja/linux/x64/ninja cmTC_4ccaa && [1/2] Building C object CMakeFiles/cmTC_4ccaa.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_4ccaa
+
+
+
+Determining if the function remove exists passed with the following output:
+Change Dir: /home/piotr/CLionProjects/licencjat/mmo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9Z1JDm
+
+Run Build Command(s):/home/piotr/.local/share/JetBrains/Toolbox/apps/clion/bin/ninja/linux/x64/ninja cmTC_96cf9 && [1/2] Building C object CMakeFiles/cmTC_96cf9.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_96cf9
+
+
+
+Determining if the function shmat exists passed with the following output:
+Change Dir: /home/piotr/CLionProjects/licencjat/mmo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-gODMVv
+
+Run Build Command(s):/home/piotr/.local/share/JetBrains/Toolbox/apps/clion/bin/ninja/linux/x64/ninja cmTC_acbb6 && [1/2] Building C object CMakeFiles/cmTC_acbb6.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_acbb6
+
+
+
+Determining if the function IceConnectionNumber exists in the ICE passed with the following output:
+Change Dir: /home/piotr/CLionProjects/licencjat/mmo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-PlBtUf
+
+Run Build Command(s):/home/piotr/.local/share/JetBrains/Toolbox/apps/clion/bin/ninja/linux/x64/ninja cmTC_4662e && [1/2] Building C object CMakeFiles/cmTC_4662e.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_4662e
+
+
+
