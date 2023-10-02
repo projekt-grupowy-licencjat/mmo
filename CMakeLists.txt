@@ -3,4 +3,4 @@ project(mmo)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(mmo main.cpp)
+add_executable(mmo game/main.cpp)

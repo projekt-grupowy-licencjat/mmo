@@ -94,7 +94,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "main.cpp",
+			"path" : "game/main.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],
