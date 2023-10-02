@@ -10,7 +10,7 @@ FetchContent_Declare(SFML
         GIT_TAG 2.6.x)
 FetchContent_MakeAvailable(SFML)
 
-add_executable(mmo game/main.cpp engine/object/object.h)
+add_executable(mmo game/main.cpp engine/object/object.h engine/physics/collision/collidable.h)
 
 target_link_libraries(mmo PRIVATE sfml-graphics)
 target_compile_features(mmo PRIVATE cxx_std_17)
