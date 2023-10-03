@@ -5,6 +5,7 @@
 #include <vector>
 #include "engine/object/object.h"
 
+// TODO: Rethink how it may work for ui (if at all)
 class Scene {
 public:
     Scene() = default;
