@@ -8,12 +8,10 @@
 class Scene {
 public:
     Scene() = default;
-
-    explicit Scene(std::vector<Object> sceneItems) {
-        this->sceneItems = std::move(sceneItems);
-    }
+    // Adds items to Object vector
+    void addItem(Object * item);
 private:
-    std::vector<Object> sceneItems;
+    std::vector<Object *> sceneItems;
 };
 
 #endif //MMO_SCENE_H

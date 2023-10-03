@@ -2,15 +2,16 @@
 #define MMO_RENDERER_H
 
 #include <SFML/Graphics.hpp>
+#include "engine/scene/scene.h"
 
 class Renderer {
 public:
-    explicit Renderer(sf::RenderTarget* target) {
+    explicit Renderer(sf::RenderTarget * target) {
         this->target = target;
     }
 
     // TODO: Implement drawing from scene
-    void draw() {
+    void draw(Scene * scene) {
 
     }
 private:

@@ -3,7 +3,10 @@
 
 // Abstract class for every game object to inherit
 class Object {
-
+public:
+    long getID();
+private:
+    long id;
 };
 
 #endif //MMO_OBJECT_H
