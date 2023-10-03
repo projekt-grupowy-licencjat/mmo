@@ -7,6 +7,7 @@
 #include "engine/scene/scene.h"
 
 namespace engine {
+    // Rendering unit - connects abstract entities like Objects, scenes etc with SFML
     class Renderer {
     public:
         explicit Renderer(std::shared_ptr<sf::RenderTarget> target) {

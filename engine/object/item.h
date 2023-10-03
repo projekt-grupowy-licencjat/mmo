@@ -9,7 +9,7 @@ namespace engine {
     class Item : public Object {
     public:
         Item(double x, double y, long id);
-        void draw(std::shared_ptr<sf::RenderTarget> target) override;
+//        ~Item();
     };
 }
 

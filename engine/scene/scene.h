@@ -11,22 +11,23 @@ namespace engine {
     public:
         Scene() = default;
 
+        // TODO: Idk if needed
         ~Scene() {
-            clearItems();
+            clear_items();
         }
 
         // Adds items to Object vector
-        void addItem(std::shared_ptr<Object> item);
+        void add_item(std::shared_ptr<Object> item);
 
-        void clearItems();
+        void clear_items();
 
-        void removeItem(long id);
+        void remove_item(long id);
 
-        std::shared_ptr<Object> getObjectById(long id);
+        std::shared_ptr<Object> get_object_by_id(long id);
 
-        std::vector<std::shared_ptr<Object>> getAllItems();
+        std::vector<std::shared_ptr<Object>> get_all_items();
     private:
-        std::vector<std::shared_ptr<Object>> sceneItems;
+        std::vector<std::shared_ptr<Object>> scene_items;
     };
 }
 #endif //MMO_SCENE_H

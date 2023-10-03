@@ -11,7 +11,7 @@ namespace engine {
     public:
         Object(double x, double y, long id);
 
-        virtual ~Object() = 0;
+//        virtual ~Object() = 0;
 
         [[nodiscard]] long get_id() const;
 
@@ -21,7 +21,6 @@ namespace engine {
 
         [[nodiscard]] std::pair<double, double> get_position() const;
 
-        virtual void draw(std::shared_ptr<sf::RenderTarget> target) = 0;
     private:
         double x, y;
         long id;
