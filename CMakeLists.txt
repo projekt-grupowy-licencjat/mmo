@@ -10,7 +10,10 @@ FetchContent_Declare(SFML
         GIT_TAG 2.6.x)
 FetchContent_MakeAvailable(SFML)
 
-add_executable(mmo game/main.cpp engine/object/object.h engine/physics/collision/collidable.h)
+SET(BASEPATH "${CMAKE_SOURCE_DIR}")
+INCLUDE_DIRECTORIES("${BASEPATH}")
+
+add_executable(mmo game/main.cpp engine/object/object.h engine/physics/collision/collidable.h engine/render/Renderer.h engine/render/Renderer.h engine/scene/Scene.h)
 
 target_link_libraries(mmo PRIVATE sfml-graphics)
 target_compile_features(mmo PRIVATE cxx_std_17)
