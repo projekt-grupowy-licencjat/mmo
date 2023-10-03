@@ -10,6 +10,8 @@ public:
     Scene() = default;
     // Adds items to Object vector
     void addItem(Object * item);
+    void clearItems();
+    void removeItem(long id);
 private:
     std::vector<Object *> sceneItems;
 };
