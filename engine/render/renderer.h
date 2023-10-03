@@ -16,9 +16,7 @@ namespace engine {
         ~Renderer() = default;
 
         // TODO: Implement drawing from scene
-        void draw(std::shared_ptr<Scene> scene) {
-
-        };
+        void draw(std::shared_ptr<Scene> scene);
     private:
         std::shared_ptr<sf::RenderTarget> target;
     };

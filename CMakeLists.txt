@@ -13,7 +13,7 @@ FetchContent_MakeAvailable(SFML)
 SET(BASEPATH "${CMAKE_SOURCE_DIR}")
 INCLUDE_DIRECTORIES("${BASEPATH}")
 
-add_executable(mmo game/main.cpp engine/object/object.h engine/physics/collision/collidable.h engine/render/renderer.h engine/render/renderer.h engine/scene/scene.h engine/event-handler/event-handler.h engine/object/ui/component.h engine/event-handler/eventful-item.h engine/object/object.cpp engine/object/item.h engine/scene/scene.cpp)
+add_executable(mmo game/main.cpp engine/object/object.h engine/physics/collision/collidable.h engine/render/renderer.h engine/render/renderer.h engine/scene/scene.h engine/event-handler/event-handler.h engine/object/ui/component.h engine/event-handler/eventful-item.h engine/object/object.cpp engine/object/item.h engine/scene/scene.cpp engine/object/item.cpp)
 
 target_link_libraries(mmo PRIVATE sfml-graphics)
 target_compile_features(mmo PRIVATE cxx_std_17)

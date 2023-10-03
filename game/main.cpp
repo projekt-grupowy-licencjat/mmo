@@ -1,6 +1,9 @@
 #include <SFML/Graphics.hpp>
+#include <memory>
 #include "engine/scene/scene.h"
 #include "engine/render/renderer.h"
+#include "engine/object/item.h"
+#include "engine/object/object.h"
 
 // for now it is a big debug field
 int main()
@@ -11,7 +14,9 @@ int main()
     std::shared_ptr<sf::RenderWindow> renderTarget(&window);
 
     engine::Renderer renderer(renderTarget);
-    auto * testScene = new engine::Scene();
+    std::shared_ptr<engine::Scene> testScene = std::make_shared<engine::Scene>();
+    auto item = std::make_shared<engine::Item>(0, 0, 0);
+    testScene->addItem(item);
 
     while (window.isOpen())
     {

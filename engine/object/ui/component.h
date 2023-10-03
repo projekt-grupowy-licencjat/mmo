@@ -3,6 +3,9 @@
 
 #include "engine/object/object.h"
 
-class Component : public Object {};
+namespace engine {
+    class Component : public engine::Object {
+    };
+}
 
 #endif //MMO_COMPONENT_H
