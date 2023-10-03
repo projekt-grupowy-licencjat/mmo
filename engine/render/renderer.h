@@ -14,6 +14,10 @@ public:
     void draw(Scene * scene) {
 
     }
+
+    ~Renderer() {
+        delete target;
+    }
 private:
     sf::RenderTarget * target;
 };

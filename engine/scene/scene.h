@@ -8,6 +8,9 @@
 class Scene {
 public:
     Scene() = default;
+    ~Scene() {
+        clearItems();
+    }
     // Adds items to Object vector
     void addItem(Object * item);
     void clearItems();
