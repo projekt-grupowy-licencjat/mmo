@@ -3,6 +3,7 @@
 
 #include <utility>
 #include <vector>
+#include <memory>
 #include "engine/object/object.h"
 
 namespace engine {
@@ -15,14 +16,17 @@ namespace engine {
         }
 
         // Adds items to Object vector
-        void addItem(Object *item);
+        void addItem(std::shared_ptr<Object> item);
 
         void clearItems();
 
         void removeItem(long id);
 
+        std::shared_ptr<Object> getObjectById(long id);
+
+        std::vector<std::shared_ptr<Object>> getAllItems();
     private:
-        std::vector<Object *> sceneItems;
+        std::vector<std::shared_ptr<Object>> sceneItems;
     };
 }
 #endif //MMO_SCENE_H

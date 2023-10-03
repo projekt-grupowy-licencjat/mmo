@@ -23,8 +23,10 @@ int main()
         }
 
         window.clear(sf::Color::Black);
+        renderer.draw(testScene);
         window.display();
     }
 
+    delete testScene;
     return 0;
 }
