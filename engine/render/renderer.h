@@ -6,20 +6,22 @@
 #include <utility>
 #include "engine/scene/scene.h"
 
-class Renderer {
-public:
-    explicit Renderer(std::shared_ptr<sf::RenderTarget> target) {
-        this->target = std::move(target); // TODO: I don't know if moving here is ok choice, may cause bugs
+namespace engine {
+    class Renderer {
+    public:
+        explicit Renderer(std::shared_ptr<sf::RenderTarget> target) {
+            this->target = std::move(target); // TODO: I don't know if moving here is ok choice, may cause bugs
+        };
+
+        ~Renderer() = default;
+
+        // TODO: Implement drawing from scene
+        void draw(Scene *scene) {
+
+        };
+    private:
+        std::shared_ptr<sf::RenderTarget> target;
     };
-
-    ~Renderer() = default;
-
-    // TODO: Implement drawing from scene
-    void draw(Scene * scene) {
-
-    };
-private:
-    std::shared_ptr<sf::RenderTarget> target;
-};
+}
 
 #endif //MMO_RENDERER_H

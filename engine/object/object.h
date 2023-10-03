@@ -4,7 +4,8 @@
 // Abstract class for every game object to inherit
 class Object {
 public:
-    long getID();
+    long getID() const;
+    virtual ~Object() = 0;
 private:
     long id;
 };
