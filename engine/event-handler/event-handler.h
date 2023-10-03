@@ -4,6 +4,9 @@
 #include <vector>
 #include "engine/object/object.h"
 
+/* Class which handles all player events, which includes character movement, menu buttons and everything else.
+  Important: it should contain only things that can be used at the moment, for some specific situations
+  like opened equipment consider having two handlers, one 'more important' than other. */
 class EventHandler {
 public:
     EventHandler() = default;
