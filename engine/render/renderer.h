@@ -2,24 +2,24 @@
 #define MMO_RENDERER_H
 
 #include <SFML/Graphics.hpp>
+#include <memory>
+#include <utility>
 #include "engine/scene/scene.h"
 
 class Renderer {
 public:
-    explicit Renderer(sf::RenderTarget * target) {
-        this->target = target;
-    }
+    explicit Renderer(std::shared_ptr<sf::RenderTarget> target) {
+        this->target = std::move(target); // TODO: I don't know if moving here is ok choice, may cause bugs
+    };
+
+    ~Renderer() = default;
 
     // TODO: Implement drawing from scene
     void draw(Scene * scene) {
 
-    }
-
-    ~Renderer() {
-        delete target;
-    }
+    };
 private:
-    sf::RenderTarget * target;
+    std::shared_ptr<sf::RenderTarget> target;
 };
 
 #endif //MMO_RENDERER_H
