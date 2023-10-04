@@ -5,6 +5,7 @@
 #include "engine/object/item.h"
 #include "engine/object/object.h"
 
+// TODO: REFACTOR THE CODE TO USE REFERENCES WHEREVER POSSIBLE
 // for now it is a big debug field
 int main()
 {

@@ -26,6 +26,7 @@ namespace engine {
         std::shared_ptr<Object> get_object_by_id(long id);
 
         std::vector<std::shared_ptr<Object>> get_all_items();
+
     private:
         std::vector<std::shared_ptr<Object>> scene_items;
     };

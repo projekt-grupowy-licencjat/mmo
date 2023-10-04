@@ -12,9 +12,8 @@ namespace engine {
     // TODO: maybe use it as something which applies configuration to drawing then?
     class Renderer {
     public:
-        explicit Renderer(std::shared_ptr<sf::RenderTarget> target) {
-            this->target = std::move(target); // TODO: I don't know if moving here is ok choice, may cause bugs
-        };
+        // TODO: Finish this
+        explicit Renderer(std::shared_ptr<sf::RenderTarget> target){};
 
         ~Renderer() = default;
 
