@@ -7,11 +7,9 @@
 
 namespace engine {
 // Abstract class for every game object to inherit
-    class Object {
+    class Object : public sf::Drawable {
     public:
         Object(double x, double y, long id);
-
-//        virtual ~Object() = 0;
 
         [[nodiscard]] long get_id() const;
 
@@ -20,6 +18,8 @@ namespace engine {
         [[nodiscard]] double get_y() const;
 
         [[nodiscard]] std::pair<double, double> get_position() const;
+
+        void set_position(double new_x, double new_y);
 
     private:
         double x, y;

@@ -15,7 +15,7 @@ int main()
 
     engine::Renderer renderer(renderTarget);
     std::shared_ptr<engine::Scene> testScene = std::make_shared<engine::Scene>();
-    auto item = std::make_shared<engine::Item>(0, 0, 0);
+    std::shared_ptr<engine::Object> item = std::make_shared<engine::Item>(0, 0, 0);
     testScene->add_item(item);
 
     while (window.isOpen())
