@@ -10,7 +10,7 @@ namespace engine {
     // as optimalization (if needed) maybe add sf::Drawable to this and
     class Scene {
     public:
-        Scene() = default;
+        Scene() {};
 
         // TODO: Idk if needed
         ~Scene() {
@@ -18,18 +18,18 @@ namespace engine {
         }
 
         // Adds items to Object vector
-        void add_item(std::shared_ptr<Object> item);
+        void add_item(Object* item);
 
         void clear_items();
 
         void remove_item(long id);
 
-        std::shared_ptr<Object> get_object_by_id(long id);
+        Object* get_object_by_id(long id);
 
-        std::vector<std::shared_ptr<Object>> get_all_items();
+        std::vector<Object *> get_all_items();
 
     private:
-        std::vector<std::shared_ptr<Object>> scene_items;
+        std::vector<Object*> scene_items;
     };
 }
 #endif //MMO_SCENE_H

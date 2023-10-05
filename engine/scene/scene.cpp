@@ -8,14 +8,14 @@ void engine::Scene::remove_item(long id) {
 
 }
 
-void engine::Scene::add_item(std::shared_ptr<Object> item) {
-
+void engine::Scene::add_item(Object* item) {
+    this->scene_items.push_back(item);
 }
 
-std::shared_ptr<engine::Object> engine::Scene::get_object_by_id(long id) {
-    return std::shared_ptr<Object>();
+engine::Object *engine::Scene::get_object_by_id(long id) {
+    return nullptr;
 }
 
-std::vector<std::shared_ptr<engine::Object>> engine::Scene::get_all_items() {
-
+std::vector<engine::Object *> engine::Scene::get_all_items() {
+    return this->scene_items;
 }

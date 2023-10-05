@@ -1,9 +1,9 @@
 #include "object.h"
 
-engine::Object::Object(double x, double y, long id) {
+engine::Object::Object(long id, const engine::object::Properties& properties) {
     this->id = id;
-    this->x = x;
-    this->y = y;
+    this->x = properties.getStartX();
+    this->y = properties.getStartY();
 }
 
 long engine::Object::get_id() const {
@@ -26,3 +26,9 @@ void engine::Object::set_position(double new_x, double new_y) {
     this->x = new_x;
     this->y = new_y;
 }
+
+sf::Sprite engine::Object::get_frame() const {
+    return this->sprite;
+}
+
+

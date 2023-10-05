@@ -14,14 +14,14 @@ namespace engine {
     class Renderer {
     public:
         // TODO: Finish this
-        explicit Renderer(sf::RenderTarget &target);
+        explicit Renderer(sf::RenderTarget *target);
 
         ~Renderer() = default;
 
         // TODO: Implement drawing from scene
-        void draw(engine::Scene &scene);
+        void draw(engine::Scene *scene);
     private:
-        sf::RenderTarget &target;
+        sf::RenderTarget *target;
     };
 }
 
