@@ -7,6 +7,7 @@
 
 namespace engine {
 // Abstract class for every game object to inherit
+// TODO: pub/sub system maybe with event-handler?
     class Object : public sf::Drawable {
     public:
         Object(double x, double y, long id);
