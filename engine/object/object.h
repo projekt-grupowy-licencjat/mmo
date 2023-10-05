@@ -11,6 +11,7 @@ namespace engine {
     public:
         Object(double x, double y, long id);
 
+        // nodiscard gives us warning if value unused
         [[nodiscard]] long get_id() const;
 
         [[nodiscard]] double get_x() const;

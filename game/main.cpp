@@ -5,7 +5,7 @@
 #include "engine/object/item.h"
 #include "engine/object/object.h"
 
-// TODO: REFACTOR THE CODE TO USE REFERENCES WHEREVER POSSIBLE
+// TODO:    REFACTOR THE CODE TO USE REFERENCES WHEREVER POSSIBLE
 // for now it is a big debug field
 int main()
 {
@@ -14,10 +14,11 @@ int main()
     sf::RenderWindow window(sf::VideoMode(800, 600), "My window");
     std::shared_ptr<sf::RenderWindow> renderTarget(&window);
 
-    engine::Renderer renderer(renderTarget);
-    std::shared_ptr<engine::Scene> testScene = std::make_shared<engine::Scene>();
+    engine::Renderer renderer(*renderTarget);
+    engine::Scene test_scene{};
+
     std::shared_ptr<engine::Object> item = std::make_shared<engine::Item>(0, 0, 0);
-    testScene->add_item(item);
+    test_scene.add_item(item);
 
     while (window.isOpen())
     {
@@ -29,7 +30,8 @@ int main()
         }
 
         window.clear(sf::Color::Black);
-        renderer.draw(testScene);
+        renderer.draw(test_scene);
+
         window.display();
     }
 
