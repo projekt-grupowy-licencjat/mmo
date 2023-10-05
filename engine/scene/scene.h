@@ -7,6 +7,7 @@
 #include "engine/object/object.h"
 
 namespace engine {
+    // as optimalization (if needed) maybe add sf::Drawable to this and
     class Scene {
     public:
         Scene() = default;

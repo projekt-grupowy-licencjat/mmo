@@ -24,5 +24,5 @@ std::pair<double, double> engine::Object::get_position() const {
 
 void engine::Object::set_position(double new_x, double new_y) {
     this->x = new_x;
-    this->y = y;
+    this->y = new_y;
 }
