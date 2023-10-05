@@ -15,6 +15,9 @@ INCLUDE_DIRECTORIES("${BASEPATH}")
 
 add_executable(mmo game/main.cpp engine/object/object.h engine/render/renderer.h engine/scene/scene.h engine/object/ui/component.h engine/object/object.cpp engine/scene/scene.cpp engine/render/renderer.cpp
         engine/object/properties/properties.h
+        engine/object/animation/animation-state.h
+        engine/object/util.cpp
+        engine/object/errors/texture.h
 
 )
 
