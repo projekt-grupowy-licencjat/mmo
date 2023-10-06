@@ -60,3 +60,7 @@ sf::Sprite engine::Object::get_frame() const {
 void engine::Object::next_frame() {
 
 }
+
+void engine::Object::set_animation_state(engine::object::AnimationState animation_state) {
+    this->animation_state = animation_state;
+}
