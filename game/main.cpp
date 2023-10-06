@@ -23,7 +23,7 @@ int main()
     engine::Renderer renderer(&window);
     engine::Scene scene;
 
-    engine::object::Properties properties(50, 50, 200, "doge.png", "", "");
+    engine::object::Properties properties(50, 50, 32, "sprite.jpg", "", "");
     Hero hero(1, properties);
     scene.add_item(&hero);
 
@@ -38,8 +38,8 @@ int main()
 
         window.clear(sf::Color::Black);
         renderer.draw(&scene);
-
         window.display();
+        hero.next_frame();
     }
 
 
