@@ -23,15 +23,9 @@ int main()
     engine::Renderer renderer(&window);
     engine::Scene scene;
 
-    sf::Texture texture;
-//    bool yes = texture.loadFromFile("doge.png");
-
-    sf::Sprite hero_sprite;
-    hero_sprite.setTexture(texture);
-    hero_sprite.setPosition(50, 50);
-//    Hero hero(1,1,1, hero_sprite);
-//
-//    scene.add_item(&hero);
+    engine::object::Properties properties(50, 50, 200, "doge.png", "", "");
+    Hero hero(1, properties);
+    scene.add_item(&hero);
 
     while (window.isOpen())
     {

@@ -15,8 +15,6 @@ namespace engine {
     public:
         Object(long id, const engine::object::Properties& properties);
 
-        virtual ~Object() = 0;
-
         // nodiscard gives us warning if value unused
         [[nodiscard]] long get_id() const;
 

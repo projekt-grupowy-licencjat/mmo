@@ -1,3 +1,4 @@
+#include <iostream>
 #include "object.h"
 #include "engine/object/util.h"
 
