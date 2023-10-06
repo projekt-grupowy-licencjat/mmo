@@ -8,7 +8,6 @@
 
 namespace engine {
     // Rendering unit - connects abstract entities like Objects, scenes etc with SFML
-    // TODO: Rethink if needed at all given that now object inherits sf::Drawable
     // TODO: maybe use it as something which applies configuration to drawing then?
     // TODO: Should be able to read a config and see what to draw and what not
     class Renderer {

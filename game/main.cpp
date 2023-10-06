@@ -24,7 +24,7 @@ int main()
     engine::Scene scene;
 
     sf::Texture texture;
-    bool yes = texture.loadFromFile("doge.png");
+//    bool yes = texture.loadFromFile("doge.png");
 
     sf::Sprite hero_sprite;
     hero_sprite.setTexture(texture);

@@ -1,5 +1,5 @@
 #include "object.h"
-#include "engine/object/util.cpp"
+#include "engine/object/util.h"
 
 engine::Object::Object(long id, const engine::object::Properties& properties) {
     this->id = id;
@@ -27,7 +27,7 @@ engine::Object::Object(long id, const engine::object::Properties& properties) {
 }
 
 void engine::Object::draw(sf::RenderTarget& target, sf::RenderStates states) const {
-    target.draw(this->get_frame());
+    target.draw(this->sprite);
 };
 
 long engine::Object::get_id() const {
