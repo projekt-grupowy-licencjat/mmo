@@ -23,7 +23,7 @@ int main()
     engine::Renderer renderer(&window);
     engine::Scene scene;
 
-    engine::object::Properties properties(50, 50, 32, "sprite.jpg", "", "");
+    engine::object::Properties properties(50, 50, 100, "doge.png", "", "");
     Hero hero(1, properties);
     scene.add_item(&hero);
 
@@ -34,6 +34,7 @@ int main()
         {
             if (event.type == sf::Event::Closed)
                 window.close();
+            if (event.type == sf::Event::KeyPressed)
         }
 
         window.clear(sf::Color::Black);

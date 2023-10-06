@@ -11,6 +11,7 @@ namespace engine {
 // Abstract class for every game object to inherit
 // TODO: Make animations more safe as the path may not be given
 // TODO: maybe move animation to another object and make it work inside here?
+// TODO (Rafał): remember about velocity
     class Object : public sf::Drawable {
     public:
         Object(long id, const engine::object::Properties& properties);

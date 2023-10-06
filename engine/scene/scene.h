@@ -29,6 +29,7 @@ namespace engine {
         std::vector<Object *> get_all_items();
 
     private:
+        // TODO: should be some hashmap by id so it can be found faster in O(1)
         std::vector<Object*> scene_items;
     };
 }
