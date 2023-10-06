@@ -58,7 +58,7 @@ sf::Sprite engine::Object::get_frame() const {
 
 // moving rect
 void engine::Object::next_frame() {
-
+    this->sprite.setTextureRect(sf::IntRect())
 }
 
 void engine::Object::set_animation_state(engine::object::AnimationState animation_state) {

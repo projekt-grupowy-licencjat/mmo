@@ -32,7 +32,6 @@ namespace engine {
         //cuts sprite to the next frame
         void next_frame();
 
-        // load texture
         void set_animation_state(engine::object::AnimationState animation_state);
 
         void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
