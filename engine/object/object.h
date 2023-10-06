@@ -31,7 +31,11 @@ namespace engine {
         sf::Sprite get_frame() const;
 
         // TODO: maybe every few frames? it depends
+        //cuts sprite to the next frame
         void next_frame();
+
+        // load texture
+        void set_animation_state(engine::object::AnimationState animation_state);
 
         void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
     private:
