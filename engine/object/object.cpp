@@ -24,12 +24,15 @@ engine::Object::Object(long id, const engine::object::Properties& properties) {
     this->fight_texture = fight_texture;
     this->move_texture = move_texture;
 
-    this->sprite.setTexture(this->idle_texture);
-    this->sprite.setTextureRect(sf::IntRect(0,0, tile_size, tile_size));
+    sprite = new sf::Sprite();
+    this->sprite->setTexture(this->idle_texture);
+    this->sprite->setTextureRect(sf::IntRect(0,0, tile_size, tile_size));
 }
 
 void engine::Object::draw(sf::RenderTarget& target, sf::RenderStates states) const {
-    target.draw(this->sprite);
+    // Refactor it when refactoring whole movement with speed etc
+    this->sprite->setPosition(x, y);
+    target.draw(*sprite);
 };
 
 long engine::Object::get_id() const {
@@ -54,7 +57,7 @@ void engine::Object::set_position(double new_x, double new_y) {
 }
 
 sf::Sprite engine::Object::get_frame() const {
-    return this->sprite;
+    return *sprite;
 }
 
 // moving rect
@@ -70,7 +73,7 @@ void engine::Object::next_frame() {
         new_y = this->tile_size * state;
         this->current_frame++;
     }
-    this->sprite.setTextureRect(sf::IntRect(new_x, new_y, this->tile_size, this->tile_size));
+    this->sprite->setTextureRect(sf::IntRect(new_x, new_y, this->tile_size, this->tile_size));
 }
 
 void engine::Object::set_animation_state(engine::object::AnimationState animation_state) {

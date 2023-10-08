@@ -44,7 +44,7 @@ namespace engine {
         sf::Texture idle_texture;
         sf::Texture fight_texture;
         sf::Texture move_texture;
-        sf::Sprite sprite;
+        sf::Sprite *sprite;
         engine::object::AnimationState animation_state;
     };
 
