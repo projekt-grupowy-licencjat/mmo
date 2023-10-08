@@ -18,11 +18,10 @@ add_executable(mmo game/main.cpp engine/object/object.h engine/render/renderer.h
         engine/object/animation/animation-state.h
         engine/object/util.h
         engine/object/errors/texture.h
-        engine/event/event-manager.h
         engine/physics/physics.h
-        engine/event/event-manager.cpp
-        engine/event/event.h
-        engine/event/event.cpp
+        engine/events/control/controlmanager.cpp
+        engine/events/control/controlmanager.h
+        engine/events/control/controllable.h
 
 )
 
